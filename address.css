@@ -1,0 +1,9 @@
+.fullAddress{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fullAddress .inputGroup{
+    margin: 0.5rem 0;
+    max-width: 80%;
+}
