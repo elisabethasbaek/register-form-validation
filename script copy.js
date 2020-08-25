@@ -1,5 +1,6 @@
 let form = document.getElementsByTagName("form")[0];
-let input = document.getElementsByTagName("input");
+let inputs = document.getElementsByTagName("input");
+console.log(inputs);
 
 let statusFirstname = document.querySelector(".statusMessage.firstname");
 let statusSurname = document.querySelector(".statusMessage.surname");
@@ -71,13 +72,15 @@ form.addEventListener("submit", function(event) {
         status = false;
     }
 
-    if (form.input.value == "") {
-        input.style.background = "rgba(209, 112, 112, 0.5)";
-        input.style.border = "1px solid rgb(209, 24, 24)";
-    } else {
-        input.style.background = "rgba(99, 224, 95, 0.5)";
-        input.style.border = "1px solid rgb(24, 209, 24)";
-    } /* why this no work? :( */
+    for(let i = 0; i < inputs.length; i++) {
+        if (inputs[i].value == "") {
+            inputs[i].style.background = "rgba(209, 112, 112, 0.5)";
+            inputs[i].style.border = "1px solid rgb(209, 24, 24)";
+        } else {
+            inputs[i].style.background = "rgba(99, 224, 95, 0.5)";
+            inputs[i].style.border = "1px solid rgb(24, 209, 24)";
+        }
+    };
 
     if (!status) return; //det samme som: if (status == false) {return;}
 
