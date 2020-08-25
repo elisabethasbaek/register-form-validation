@@ -75,7 +75,7 @@ form.addEventListener("submit", function(event) {
     if (form.houseNumber.value == "") {
         statusHouseNumber.innerText = "Du skal udfylde dit husnummer";
         colorHouseNumber.style.background = "rgba(209, 112, 112, 0.5)";
-        document.querySelector(".inputGroup #houseNumber").style.border = "1px solid rgb(209, 24, 24)";
+        colorHouseNumber.style.border = "1px solid rgb(209, 24, 24)";
         status = false;
     } else {
         colorHouseNumber.style.background = "rgba(99, 224, 95, 0.5)";
@@ -131,7 +131,6 @@ form.addEventListener("submit", function(event) {
         colorEmail.style.background = "rgba(99, 224, 95, 0.5)";
         colorEmail.style.border = "1px solid rgb(24, 209, 24)";
     }
-
 
     if (!status) return; //det samme som: if (status == false) {return;}
 
