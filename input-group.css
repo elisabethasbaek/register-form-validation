@@ -8,6 +8,7 @@
 .inputGroup label{
     cursor: pointer;
     margin-bottom: 0.2rem;
+    color: rgb(22, 1, 70);
 }
 
 .inputGroup label:hover{
@@ -18,19 +19,8 @@
     padding: 0.5rem;
     font-weight: bold;
     font-size: 1rem;
+    color: rgb(22, 1, 70);
 }
-
-/* Remove arrow buttons from number input fields: */
-    .inputGroup input::-webkit-outer-spin-button,
-    .inputGroup input::-webkit-inner-spin-button{
-        -webkit-appearance: none;
-        margin: 0;
-    } /* Chrome, Safari, Edge, Opera */
-
-    .inputGroup input[type=number] {
-        -moz-appearance: textfield;
-    } /* Firefox */
-/* end of arrow styling */
 
 .inputGroup input:focus{
     outline: 3px solid rgba(255, 230, 3, .5);
@@ -47,13 +37,14 @@
     max-width: 90%;
 }
 
-.statusMessage{
-    color: rgb(209, 24, 24);
-    padding-top: 0.2rem;
-    padding-left: 0.5rem;
-    font-style: italic;
-}
+/* Remove arrow buttons from number input fields: */
+.inputGroup input::-webkit-outer-spin-button,
+.inputGroup input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+} /* Chrome, Safari, Edge, Opera */
 
-.focusStatusMessage{
-    outline: 2px solid rgba(209, 24, 24, .5);
-} /* make outline red when input is wrong */
+.inputGroup input[type=number] {
+    -moz-appearance: textfield;
+} /* Firefox */
+/* end of arrow styling */

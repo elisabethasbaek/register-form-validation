@@ -1,8 +1,10 @@
 .submitButton{
     background:#F5E341;
+    color: rgb(22, 1, 70);
     font-weight: bolder;
+    font-size: 1rem;
     padding: 1rem 3rem;
-    box-shadow: 0.2rem 0.2rem rgba(155, 155, 155, 0.2);
+    box-shadow: 0.2rem 0.2rem 4px rgba(155, 155, 155, 0.3);
     border: 0;
     cursor: pointer;
     transition: 0.5s;
@@ -10,4 +12,8 @@
 
 .submitButton:hover{
     transform: scale(1.1, 1.1);
+}
+
+.submitButton:focus{
+    outline: none;
 }

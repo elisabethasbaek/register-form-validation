@@ -1,0 +1,8 @@
+
+.statusMessage{
+    color: rgb(209, 24, 24);
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 0.2rem;
+    padding-left: 0.5rem;
+    font-style: italic;
+}

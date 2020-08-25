@@ -14,84 +14,87 @@
 </head>
   
 <body>
+    <main>
 
-    <h1 class="heading">Opret bruger</h1>
+        <h1 class="heading">Opret bruger</h1>
 
-    <form action="login.php" method="POST" class="fullForm" novalidate>
-        <fieldset>
-            <div class="fullName">
-                <div class="inputGroup">
-                    <label for="firstname">Fornavn *</label>
-                    <input type="text" name="firstname" id="firstname" placeholder="Leonard" required>
-                    <span class="statusMessage firstname"></span>
+        <form action="login.php" method="POST" class="fullForm" novalidate>
+            <fieldset>
+                <div class="fullName">
+                    <div class="inputGroup">
+                        <label for="firstname">Fornavn *</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Leonard" required>
+                        <span class="statusMessage firstname"></span>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label for="surname">Efternavn *</label>
+                        <input type="text" name="surname" id="surname" placeholder="Cohen" required>
+                        <span class="statusMessage surname"></span>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fullAddress">
+                    <div class="inputGroup">
+                        <label for="street">Vejnavn *</label>
+                        <input type="text" name="street" id="street" placeholder="Manhattenvej" required>
+                        <span class="statusMessage street"></span>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label for="houseNumber">Husnummer *</label>
+                        <input type="number" name="houseNumber" id="houseNumber" placeholder="82" required>
+                        <span class="statusMessage houseNumber"></span>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label for="floor">Etage eller husnummer</label>
+                        <input type="text" name="floor" id="floor" placeholder="2">
+                        <span class="statusMessage floor"></span>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label for="zip">Postnummer *</label>
+                        <input type="number" name="zip" id="zip" placeholder="2500" required>
+                        <span class="statusMessage zip"></span>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label for="city">By *</label>
+                        <input type="text" name="city" id="city" placeholder="Valby" required>
+                        <span class="statusMessage city"></span>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="inputGroup username">
+                    <label for="username">Brugernavn *</label>
+                    <input type="text" name="username" id="username" placeholder="Hallelujah1984" required>
+                    <span class="statusMessage username"></span>
                 </div>
 
-                <div class="inputGroup">
-                    <label for="surname">Efternavn *</label>
-                    <input type="text" name="surname" id="surname" placeholder="Cohen" required>
-                    <span class="statusMessage surname"></span>
-                </div>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <div class="fullAddress">
-                <div class="inputGroup">
-                    <label for="street">Vejnavn *</label>
-                    <input type="text" name="street" id="street" placeholder="Manhattenvej" required>
-                    <span class="statusMessage street"></span>
+                <div class="inputGroup password">
+                    <label for="password">Adgangskode *</label>
+                    <input type="password" name="password" id="password" required>
+                    <span class="statusMessage password"></span>
                 </div>
 
-                <div class="inputGroup">
-                    <label for="houseNumber">Husnummer *</label>
-                    <input type="number" name="houseNumber" id="houseNumber" placeholder="82" required>
-                    <span class="statusMessage houseNumber"></span>
+                <div class="inputGroup email">
+                    <label for="email">Email-adresse *</label>
+                    <input type="email" name="email" id="email" placeholder="leonard.cohen@gmail.com" required>
+                    <span class="statusMessage email"></span>
                 </div>
+            </fieldset>
 
-                <div class="inputGroup">
-                    <label for="floor">Etage eller husnummer</label>
-                    <input type="text" name="floor" id="floor" placeholder="2">
-                    <span class="statusMessage floor"></span>
-                </div>
+            <p class="starSymbol">Felter angivet med stjerne (*) skal udfyldes.</p>
 
-                <div class="inputGroup">
-                    <label for="zip">Postnummer *</label>
-                    <input type="number" name="zip" id="zip" placeholder="2500" required>
-                    <span class="statusMessage zip"></span>
-                </div>
+            <button type="submit" class="submitButton">OPRET</button>
+        </form>
 
-                <div class="inputGroup">
-                    <label for="city">By *</label>
-                    <input type="text" name="city" id="city" placeholder="Valby" required>
-                    <span class="statusMessage city"></span>
-                </div>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <div class="inputGroup username">
-                <label for="username">Brugernavn *</label>
-                <input type="text" name="username" id="username" placeholder="Hallelujah1984" required>
-                <span class="statusMessage username"></span>
-            </div>
-
-            <div class="inputGroup password">
-                <label for="password">Adgangskode *</label>
-                <input type="password" name="password" id="password" required>
-                <span class="statusMessage password"></span>
-            </div>
-
-            <div class="inputGroup email">
-                <label for="email">Email-adresse *</label>
-                <input type="email" name="email" id="email" placeholder="leonard.cohen@gmail.com" required>
-                <span class="statusMessage email"></span>
-            </div>
-        </fieldset>
-
-        <p class="starSymbol">Felter angivet med stjerne (*) skal udfyldes.</p>
-
-        <button type="submit" class="submitButton">OPRET</button>
-    </form>
+    </main>
 		
 </body>
 

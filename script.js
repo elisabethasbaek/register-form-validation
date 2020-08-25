@@ -78,7 +78,7 @@ form.addEventListener("submit", function(event) {
         } else {
             inputs[i].style.background = "rgba(99, 224, 95, 0.5)";
             inputs[i].style.border = "1px solid rgb(24, 209, 24)";
-        } /* markerer også etage-input som grøn - burde være standard hvid */
+        } /* markerer også floor-input som grøn - burde være standard hvid */
     };
 
     if (!status) return; //det samme som: if (status == false) {return;}
