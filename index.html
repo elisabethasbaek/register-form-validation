@@ -10,14 +10,14 @@
 
 	<script src="script.js" defer></script> <!-- javascript -->
 	
-	<title>Opret bruger</title> <!-- title in tab -->
+	<title>Opret bruger</title> 
 </head>
   
 <body>
 
     <h1 class="heading">Opret bruger</h1>
 
-    <form action="login.php" method="POST" class="fullForm">
+    <form action="login.php" method="POST" class="fullForm" novalidate>
         <div class="fullName">
             <div class="inputGroup">
                 <label for="firstname">Fornavn *</label>
@@ -47,13 +47,13 @@
 
             <div class="inputGroup">
                 <label for="floor">Etage</label>
-                <input type="text" name="floor" id="floor" placeholder="2">
+                <input type="text" name="floor" id="floor" placeholder="2" required>
                 <span class="statusMessage floor"></span>
             </div>
 
             <div class="inputGroup">
                 <label for="zip">Postnummer *</label>
-                <input type="text" name="zip" id="zip" placeholder="2500" required>
+                <input type="number" name="zip" id="zip" placeholder="2500" required>
                 <span class="statusMessage zip"></span>
             </div>
 

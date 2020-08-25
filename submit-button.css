@@ -5,9 +5,9 @@
     box-shadow: 0.2rem 0.2rem rgba(155, 155, 155, 0.2);
     border: 0;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .submitButton:hover{
-    transition: 0.5s;
     transform: scale(1.1, 1.1);
 }

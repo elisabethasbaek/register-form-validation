@@ -5,13 +5,14 @@
 
 body{
     margin: 0 auto;
-    padding: 0 5rem;
+    padding: 0 25% 20rem;
     max-width:980px;
     background: rgb(229, 246, 250);
 }
 
 .heading{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
     cursor: default;
 }
 
@@ -20,19 +21,7 @@ fieldset{
 }
 
 .fullForm{
-    max-width: 70%;
-}
-
-.inputGroup.username{
-    max-width: 90%;
-}
-
-.inputGroup.password{
-    max-width: 90%;
-}
-
-.inputGroup.email{
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .starSymbol{
