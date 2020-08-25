@@ -15,20 +15,24 @@ body{
     cursor: default;
 }
 
+fieldset{
+    border: none;
+}
+
 .fullForm{
     max-width: 70%;
 }
 
-.inputGroup .username{
-    max-width: 70%;
+.inputGroup.username{
+    max-width: 90%;
 }
 
-.inputGroup .password{
-    max-width: 70%;
+.inputGroup.password{
+    max-width: 90%;
 }
 
-.inputGroup .email{
-    max-width: 70%;
+.inputGroup.email{
+    max-width: 90%;
 }
 
 .starSymbol{
