@@ -28,46 +28,55 @@ form.addEventListener("submit", function(event) {
 
     if (form.firstname.value == "") {
         statusFirstname.innerText = "Du skal udfylde dit fornavn";
+        statusFirstname.setAttribute("aria-hidden", "false");
         status = false;
     }
 
     if (form.surname.value == "") {
         statusSurname.innerText = "Du skal udfylde dit efternavn";
+        statusSurname.setAttribute("aria-hidden", "false");
         status = false;
     }
 
     if (form.street.value == "") {
         statusStreet.innerText = "Du skal udfylde dit vejnavn";
+        statusStreet.setAttribute("aria-hidden", "false");
         status = false;
     }
 
     if (form.houseNumber.value == "") {
         statusHouseNumber.innerText = "Du skal udfylde dit husnummer";
+        statusHouseNumber.setAttribute("aria-hidden", "false");
         status = false;
     }
 
     if (form.zip.value == "") {
         statusZip.innerText = "Du skal udfylde dit postnummer";
+        statusZip.setAttribute("aria-hidden", "false");
         status = false;
     }
 
     if (form.city.value == "") {
         statusCity.innerText = "Du skal udfylde din by"
+        statusCity.setAttribute("aria-hidden", "false");
         status = false;
     }
 
     if (form.username.value == "") {
         statusUsername.innerText = "Du skal udfylde dit brugernavn";
+        statusUsername.setAttribute("aria-hidden", "false");
         status = false;
     } 
 
     if (form.password.value == "") {
         statusPassword.innerText = "Du skal udfylde din adgangskode";
+        statusPassword.setAttribute("aria-hidden", "false");
         status = false;
     }
 
     if (form.email.value == "") {
         statusEmail.innerText = "Du skal udfylde din email-adresse";
+        statusEmail.setAttribute("aria-hidden", "false");
         status = false;
     }
 

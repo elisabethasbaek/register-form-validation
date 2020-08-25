@@ -13,40 +13,40 @@
 	<title>Opret bruger</title> 
 </head>
   
-<body>
-    <main>
+<body role="document">
+    <main role="main">
 
-        <h1 class="heading">Opret bruger</h1>
+        <h1 class="heading" role="heading">Opret bruger</h1>
 
-        <form action="login.php" method="POST" class="fullForm" novalidate>
-            <fieldset>
+        <form action="login.php" method="POST" class="fullForm" role="form" novalidate>
+            <fieldset role="group">
                 <div class="fullName">
                     <div class="inputGroup">
                         <label for="firstname">Fornavn *</label>
-                        <input type="text" name="firstname" id="firstname" placeholder="Leonard" required>
-                        <span class="statusMessage firstname"></span>
+                        <input type="text" name="firstname" id="firstname" placeholder="Leonard" role="textbox" aria-required="true" required>
+                        <span class="statusMessage firstname" aria-hidden="true"></span>
                     </div>
 
                     <div class="inputGroup">
                         <label for="surname">Efternavn *</label>
-                        <input type="text" name="surname" id="surname" placeholder="Cohen" required>
-                        <span class="statusMessage surname"></span>
+                        <input type="text" name="surname" id="surname" placeholder="Cohen" role="textbox" aria-required="true" required>
+                        <span class="statusMessage surname" aria-hidden="true"></span>
                     </div>
                 </div>
             </fieldset>
 
-            <fieldset>
+            <fieldset role="group">
                 <div class="fullAddress">
                     <div class="inputGroup">
                         <label for="street">Vejnavn *</label>
-                        <input type="text" name="street" id="street" placeholder="Manhattenvej" required>
-                        <span class="statusMessage street"></span>
+                        <input type="text" name="street" id="street" placeholder="Manhattenvej" role="textbox" aria-required="true" required>
+                        <span class="statusMessage street" aria-hidden="true"></span>
                     </div>
 
                     <div class="inputGroup">
                         <label for="houseNumber">Husnummer *</label>
-                        <input type="number" name="houseNumber" id="houseNumber" placeholder="82" required>
-                        <span class="statusMessage houseNumber"></span>
+                        <input type="number" name="houseNumber" id="houseNumber" placeholder="82" aria-required="true" required>
+                        <span class="statusMessage houseNumber" aria-hidden="true"></span>
                     </div>
 
                     <div class="inputGroup">
@@ -57,41 +57,41 @@
 
                     <div class="inputGroup">
                         <label for="zip">Postnummer *</label>
-                        <input type="number" name="zip" id="zip" placeholder="2500" required>
-                        <span class="statusMessage zip"></span>
+                        <input type="number" name="zip" id="zip" placeholder="2500" aria-required="true" required>
+                        <span class="statusMessage zip" aria-hidden="true"></span>
                     </div>
 
                     <div class="inputGroup">
                         <label for="city">By *</label>
-                        <input type="text" name="city" id="city" placeholder="Valby" required>
-                        <span class="statusMessage city"></span>
+                        <input type="text" name="city" id="city" placeholder="Valby" role="textbox" aria-required="true" required>
+                        <span class="statusMessage city" aria-hidden="true"></span>
                     </div>
                 </div>
             </fieldset>
 
-            <fieldset>
+            <fieldset role="group">
                 <div class="inputGroup username">
                     <label for="username">Brugernavn *</label>
-                    <input type="text" name="username" id="username" placeholder="Hallelujah1984" required>
-                    <span class="statusMessage username"></span>
+                    <input type="text" name="username" id="username" placeholder="Hallelujah1984" role="textbox" aria-required="true" required>
+                    <span class="statusMessage username" aria-hidden="true"></span>
                 </div>
 
                 <div class="inputGroup password">
                     <label for="password">Adgangskode *</label>
-                    <input type="password" name="password" id="password" required>
-                    <span class="statusMessage password"></span>
+                    <input type="password" name="password" id="password" role="textbox" aria-required="true" required>
+                    <span class="statusMessage password" aria-hidden="true"></span>
                 </div>
 
                 <div class="inputGroup email">
                     <label for="email">Email-adresse *</label>
-                    <input type="email" name="email" id="email" placeholder="leonard.cohen@gmail.com" required>
-                    <span class="statusMessage email"></span>
+                    <input type="email" name="email" id="email" placeholder="leonard.cohen@gmail.com" role="textbox" aria-required="true" required>
+                    <span class="statusMessage email" aria-hidden="true"></span>
                 </div>
             </fieldset>
 
             <p class="starSymbol">Felter angivet med stjerne (*) skal udfyldes.</p>
 
-            <button type="submit" class="submitButton">OPRET</button>
+            <button type="submit" class="submitButton" role="button">OPRET</button>
         </form>
 
     </main>
