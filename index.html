@@ -8,7 +8,7 @@
 
 	<link href="style.css" rel="stylesheet" type="text/css"> <!-- connect to css file -->
 
-	<script src="script.js" defer></script> <!-- javascript -->
+	<script src="app.js" type="module" defer></script> <!-- javascript -->
 	
 	<title>Opret bruger</title> 
 </head>
@@ -23,14 +23,18 @@
                 <div class="fullName">
                     <div class="inputGroup">
                         <label for="firstname">Fornavn *</label>
-                        <input type="text" name="firstname" id="firstname" placeholder="Leonard" role="textbox" aria-required="true" required>
+                        <input type="text" name="firstname" id="firstname" placeholder="Leonard" role="textbox" aria-required="true" aria-describedby="descriptionFirstname" required>
                         <span class="statusMessage firstname" aria-hidden="true"></span>
+
+                        <p id="descriptionFirstname" hidden>Skriv dit fornavn her</p>
                     </div>
 
                     <div class="inputGroup">
                         <label for="surname">Efternavn *</label>
-                        <input type="text" name="surname" id="surname" placeholder="Cohen" role="textbox" aria-required="true" required>
+                        <input type="text" name="surname" id="surname" placeholder="Cohen" role="textbox" aria-required="true" aria-describedby="descriptionSurname" required>
                         <span class="statusMessage surname" aria-hidden="true"></span>
+
+                        <p id="descriptionSurname" hidden>Skriv dit efternavn her</p>
                     </div>
                 </div>
             </fieldset>
@@ -39,32 +43,40 @@
                 <div class="fullAddress">
                     <div class="inputGroup">
                         <label for="street">Vejnavn *</label>
-                        <input type="text" name="street" id="street" placeholder="Manhattenvej" role="textbox" aria-required="true" required>
+                        <input type="text" name="street" id="street" placeholder="Manhattenvej" role="textbox" aria-required="true" aria-describedby="descriptionStreet" required>
                         <span class="statusMessage street" aria-hidden="true"></span>
-                    </div>
 
-                    <div class="inputGroup">
-                        <label for="houseNumber">Husnummer *</label>
-                        <input type="number" name="houseNumber" id="houseNumber" placeholder="82" aria-required="true" required>
-                        <span class="statusMessage houseNumber" aria-hidden="true"></span>
-                    </div>
-
-                    <div class="inputGroup">
-                        <label for="floor">Etage eller husnummer</label>
-                        <input type="text" name="floor" id="floor" placeholder="2">
-                        <span class="statusMessage floor"></span>
+                        <p id="descriptionStreet" hidden>Skriv dit vejnavn her</p>
                     </div>
 
                     <div class="inputGroup">
                         <label for="zip">Postnummer *</label>
                         <input type="number" name="zip" id="zip" placeholder="2500" aria-required="true" required>
                         <span class="statusMessage zip" aria-hidden="true"></span>
+
+                        <p id="descriptionFirstname" hidden>Skriv dit fornavn her</p>
                     </div>
 
                     <div class="inputGroup">
                         <label for="city">By *</label>
                         <input type="text" name="city" id="city" placeholder="Valby" role="textbox" aria-required="true" required>
                         <span class="statusMessage city" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label for="houseNumber">Husnummer *</label>
+                        <input type="number" name="houseNumber" id="houseNumber" placeholder="82" aria-required="true" aria-describedby="descriptionHouseNumber" required>
+                        <span class="statusMessage houseNumber" aria-hidden="true"></span>
+                        
+                        <p id="descriptionHouseNumber" hidden>Skriv dit husnummer her</p>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label for="floor">Etage eller husnummer</label>
+                        <input type="text" name="floor" id="floor" placeholder="2">
+                        <span class="statusMessage floor"></span>
+                        
+                        <p id="descriptionFirstname" hidden>Skriv din etage eller dit husnummer her</p>
                     </div>
                 </div>
             </fieldset>
